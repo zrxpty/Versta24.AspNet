@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "View Order";
+}
+@model IEnumerable<Versta24.AspNet.Models.Order>
+
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="container p-3">   
+    <br /><br />
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>
+                        Track
+                    </th>
+                    <th>
+                        From
+                    </th>
+                    <th>
+                        Where
+                    </th>
+                    <th>
+                        Weight
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td width="30%">@obj.Id</td>
+                        <td width="30%">@obj.SenderCity, @obj.SenderAddres</td>
+                        <td width="30%">@obj.RecipientCity, @obj.RecipientAddres</td>
+                        <td width="10%">@obj.Weight</td>
+                        <td class="text-center">
+                            <div class="w-75 btn-group" role="group">
+                                <a asp-controller="Home" asp-route-Id="@obj.Id" asp-action="Edit" class="btn btn-primary mx-2">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a asp-controller="Home" asp-route-Id="@obj.Id" asp-action="Delete" class="btn btn-danger mx-2">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                                 
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p> No Order exists.</p>
+    }
