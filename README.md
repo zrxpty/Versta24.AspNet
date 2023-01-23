@@ -31,5 +31,7 @@ dotnet run
 ![Image alt](https://github.com/zrxpty/Versta24.AspNet/blob/main/ReadmeData/Run.png)
 ### Views
 ![Image alt](https://github.com/zrxpty/Versta24.AspNet/blob/main/ReadmeData/AddOrder.png)
-
+![Image alt](https://github.com/zrxpty/Versta24.AspNet/blob/main/ReadmeData/Delete.png)
+![Image alt](https://github.com/zrxpty/Versta24.AspNet/blob/main/ReadmeData/Edit.png)
+![Image alt](https://github.com/zrxpty/Versta24.AspNet/blob/main/ReadmeData/View.png)
 
