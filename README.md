@@ -30,3 +30,6 @@ dotnet run
 ```
 ![Image alt](https://github.com/zrxpty/Versta24.AspNet/blob/main/ReadmeData/Run.png)
 ### Views
+![Image alt](https://github.com/zrxpty/Versta24.AspNet/blob/main/ReadmeData/AddOrder.png)
+
+
